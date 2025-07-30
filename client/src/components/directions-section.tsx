@@ -30,9 +30,10 @@ export default function DirectionsSection() {
                 <div>
                   <p className="font-semibold text-dark">Address</p>
                   <p className="text-gray-600 text-sm">
-                    123 Temple Street<br />
-                    Community Area<br />
-                    City, State 12345
+                    Sector-5 Lane<br />
+                    Backside of Sector-3 PHD Office<br />
+                    Niladri Vihar , C.S. Pur , BBSR
+
                   </p>
                 </div>
               </div>
@@ -41,7 +42,7 @@ export default function DirectionsSection() {
                 <Phone className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-semibold text-dark">Phone</p>
-                  <p className="text-gray-600 text-sm">+1 (555) 123-4567</p>
+                  <p className="text-gray-600 text-sm">+91 8260978544</p>
                 </div>
               </div>
 
@@ -49,7 +50,7 @@ export default function DirectionsSection() {
                 <Mail className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-semibold text-dark">Email</p>
-                  <p className="text-gray-600 text-sm">info@proficientyouthclub.org</p>
+                  <p className="text-gray-600 text-sm"></p>
                 </div>
               </div>
 
@@ -58,8 +59,8 @@ export default function DirectionsSection() {
                 <div>
                   <p className="font-semibold text-dark">Operating Hours</p>
                   <p className="text-gray-600 text-sm">
-                    Mon-Fri: 6:00 AM - 9:00 PM<br />
-                    Sat-Sun: 5:00 AM - 10:00 PM
+                  27th aug 2025<br />
+                   wed : 12pm - 2pm
                   </p>
                 </div>
               </div>
