@@ -77,7 +77,7 @@ export default function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/proficient_youth_club?igsh=MTV5NXpmaWoyempmaA=="
                 className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary/80 transition-colors"
               >
                 <Twitter className="w-5 h-5" />
