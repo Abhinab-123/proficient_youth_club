@@ -1,56 +1,9 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { ExternalLink } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Heart, ExternalLink } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
 
 export default function DonationSection() {
-  const [selectedAmount, setSelectedAmount] = useState<string>("");
-  const [customAmount, setCustomAmount] = useState<string>("");
-  const [donorInfo, setDonorInfo] = useState({
-    name: "",
-    email: "",
-    phone: "",
-  });
-  const { toast } = useToast();
-
-  const predefinedAmounts = ["500", "1000", "2000"];
-
-  const handleAmountSelect = (amount: string) => {
-    setSelectedAmount(amount);
-    setCustomAmount("");
-  };
-
-  const handleCustomAmountChange = (value: string) => {
-    setCustomAmount(value);
-    if (value) {
-      setSelectedAmount("");
-    }
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const amount = customAmount || selectedAmount;
-    
-    if (!amount || !donorInfo.name || !donorInfo.email) {
-      toast({
-        title: "Missing Information",
-        description: "Please fill in all required fields and select an amount.",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    toast({
-      title: "Donation Form Submitted",
-      description: `Thank you ${donorInfo.name}! Your donation of ₹${amount} is being processed.`,
-    });
-  };
-
-
-
   return (
     <section id="donation" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-6">
@@ -62,95 +15,8 @@ export default function DonationSection() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          {/* Donation Form */}
-          <Card className="bg-neutral shadow-lg">
-            <CardHeader>
-              <CardTitle className="text-2xl font-bold text-secondary">Make a Donation</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <Label className="block text-sm font-semibold text-dark mb-2">
-                    Donation Amount
-                  </Label>
-                  <div className="grid grid-cols-3 gap-3 mb-4">
-                    {predefinedAmounts.map((amount) => (
-                      <Button
-                        key={amount}
-                        type="button"
-                        variant={selectedAmount === amount ? "default" : "outline"}
-                        className={`px-4 py-3 font-semibold ${
-                          selectedAmount === amount
-                            ? "bg-primary text-white hover:bg-primary/90"
-                            : "border-primary text-primary hover:bg-primary hover:text-white"
-                        }`}
-                        onClick={() => handleAmountSelect(amount)}
-                      >
-                        ₹{amount}
-                      </Button>
-                    ))}
-                  </div>
-                  <Input
-                    type="number"
-                    placeholder="Custom amount"
-                    value={customAmount}
-                    onChange={(e) => handleCustomAmountChange(e.target.value)}
-                    className="w-full"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="name" className="block text-sm font-semibold text-dark mb-2">
-                    Full Name *
-                  </Label>
-                  <Input
-                    id="name"
-                    type="text"
-                    value={donorInfo.name}
-                    onChange={(e) => setDonorInfo({ ...donorInfo, name: e.target.value })}
-                    required
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="email" className="block text-sm font-semibold text-dark mb-2">
-                    Email Address *
-                  </Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    value={donorInfo.email}
-                    onChange={(e) => setDonorInfo({ ...donorInfo, email: e.target.value })}
-                    required
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="phone" className="block text-sm font-semibold text-dark mb-2">
-                    Phone Number
-                  </Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    value={donorInfo.phone}
-                    onChange={(e) => setDonorInfo({ ...donorInfo, phone: e.target.value })}
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  className="w-full bg-primary text-white py-4 rounded-lg font-semibold text-lg hover:bg-primary/90 transition-colors"
-                  size="lg"
-                >
-                  <Heart className="w-5 h-5 mr-2" />
-                  Proceed to Payment
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
-
           {/* QR Code and Alternative Payment Methods */}
-          <div className="space-y-8">
+          <div className="space-y-8 w-full col-span-2 md:col-span-1">
             <Card className="bg-neutral shadow-lg text-center">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-secondary">Quick Payment</CardTitle>
@@ -167,8 +33,7 @@ export default function DonationSection() {
                   </div>
                 </div>
                 <p className="text-sm text-gray-500 mt-4">
-                  UPI ID:8260978544@ibl <br />
-                  
+                  UPI ID:8260978544@ibl
                 </p>
               </CardContent>
             </Card>
