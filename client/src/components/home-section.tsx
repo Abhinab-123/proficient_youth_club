@@ -18,7 +18,7 @@ export default function HomeSection() {
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-6">
-            Welcome to <span className="text-primary">Proficient Youth Club</span>
+          ॐ<span className="text-primary"> श्री गणेशाय नमः</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Join our vibrant community dedicated to celebrating culture, fostering spiritual growth,

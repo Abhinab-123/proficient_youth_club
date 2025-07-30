@@ -55,9 +55,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li>+1 (555) 123-4567</li>
-              <li>info@proficientyouthclub.org</li>
-              <li>123 Temple Street, City</li>
+              <li>+91 8260978544</li>
+              <li></li>
+              <li></li>
             </ul>
           </div>
 
@@ -88,7 +88,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-600 mt-8 pt-8 text-center">
           <p className="text-gray-300 text-sm">
-            © 2024 Proficient Youth Club. All rights reserved. | Built with love for our community.
+            © 2025 Proficient Youth Club. All rights reserved. | Built with love for our community.
           </p>
         </div>
       </div>

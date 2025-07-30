@@ -55,10 +55,9 @@ export default function DonationSection() {
     <section id="donation" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">Support Our Mission</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">Support Our Celebration</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Your generous donations help us maintain our temple, organize community events,
-            and support various charitable initiatives.
+            Your generous donations help us organize community events
           </p>
         </div>
 
@@ -190,7 +189,7 @@ export default function DonationSection() {
                     <Button
                       variant="default"
                       className="bg-primary text-white hover:bg-primary/90"
-                      onClick={() => window.open("https://forms.google.com", "_blank")}
+                      onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSfxd1VQCrk_Lv8GhwqNNAt_yzF_r3ByEvGeXNtVa1yDnsSQlg/viewform?usp=dialog", "_blank")}
                     >
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Open Verification Form

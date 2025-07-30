@@ -4,7 +4,7 @@ import { ExternalLink, File } from "lucide-react";
 
 export default function CommunitySection() {
   const handleOpenRegistrationForm = () => {
-    window.open("https://forms.google.com", "_blank");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSe1ZolEDALRKXSRuqJHeYMSVzhaQ4BMI6cGL0sGJ4zt7OYFpg/viewform?usp=dialog", "_blank");
   };
 
   return (
@@ -13,8 +13,7 @@ export default function CommunitySection() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">Join Our Community</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Become part of our vibrant community and participate in cultural events,
-            spiritual activities, and charitable initiatives throughout the year.
+            Become part of our vibrant community and participate in cultural events
           </p>
         </div>
 
@@ -24,7 +23,7 @@ export default function CommunitySection() {
             <CardHeader>
               <CardTitle className="text-2xl font-bold text-secondary">Registration Form</CardTitle>
               <p className="text-gray-600">
-                Fill out the form below to join our community. We'll get back to you within 24 hours.
+                Fill out the form below to join our community. 
               </p>
             </CardHeader>
             <CardContent>
