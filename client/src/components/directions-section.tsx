@@ -4,9 +4,7 @@ import { MapPin, Phone, Mail, Clock, Navigation } from "lucide-react";
 
 export default function DirectionsSection() {
   const handleGetDirections = () => {
-    const address = "123 Temple Street, Community Area, City, State 12345";
-    const encodedAddress = encodeURIComponent(address);
-    window.open(`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`, "_blank");
+    window.open("https://maps.app.goo.gl/fYmm58vdZYZVMVXM9", "_blank");
   };
 
   return (
