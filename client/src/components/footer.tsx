@@ -28,7 +28,7 @@ export default function Footer() {
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
                 <span className="text-white text-lg font-bold">ॐ</span>
               </div>
-              <span className="text-xl font-bold">Ganesh Club</span>
+              <span className="text-xl font-bold">Proficient Youth Club</span>
             </div>
             <p className="text-gray-300 text-sm">
               Dedicated to celebrating culture, fostering spiritual growth,
@@ -56,7 +56,7 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>+1 (555) 123-4567</li>
-              <li>info@ganeshclub.org</li>
+              <li>info@proficientyouthclub.org</li>
               <li>123 Temple Street, City</li>
             </ul>
           </div>
@@ -88,7 +88,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-600 mt-8 pt-8 text-center">
           <p className="text-gray-300 text-sm">
-            © 2024 Ganesh Club. All rights reserved. | Built with love for our community.
+            © 2024 Proficient Youth Club. All rights reserved. | Built with love for our community.
           </p>
         </div>
       </div>

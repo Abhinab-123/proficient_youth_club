@@ -46,7 +46,7 @@ export default function Navigation() {
             <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
               <span className="text-white text-lg font-bold">ॐ</span>
             </div>
-            <span className="text-xl font-bold text-secondary">Ganesh Club</span>
+            <span className="text-xl font-bold text-secondary">Proficient Youth Club</span>
           </div>
 
           {/* Desktop Navigation */}

@@ -161,14 +161,14 @@ export default function DonationSection() {
                 <div className="bg-white p-6 rounded-lg shadow-inner mx-auto max-w-xs">
                   <div className="w-48 h-48 rounded-lg mx-auto overflow-hidden">
                     <img
-                      src="@assets/Screenshot 2025-07-30 172406_1753876474977.png"
+                      src="/assets/qr-code.png"
                       alt="QR Code for Donations"
                       className="w-full h-full object-contain"
                     />
                   </div>
                 </div>
                 <p className="text-sm text-gray-500 mt-4">
-                  UPI ID: ganeshclub@bank<br />
+                  UPI ID: proficientyouthclub@bank<br />
                   Account: XXXX-XXXX-XXXX
                 </p>
               </CardContent>

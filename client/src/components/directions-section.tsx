@@ -51,7 +51,7 @@ export default function DirectionsSection() {
                 <Mail className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-semibold text-dark">Email</p>
-                  <p className="text-gray-600 text-sm">info@ganeshclub.org</p>
+                  <p className="text-gray-600 text-sm">info@proficientyouthclub.org</p>
                 </div>
               </div>
 
@@ -80,7 +80,7 @@ export default function DirectionsSection() {
           <div className="md:col-span-2 bg-white rounded-xl shadow-lg overflow-hidden">
             <div className="relative h-96">
               <img
-                src="@assets/ganesh photo_1753876474979.jpg"
+                src="/assets/ganesh-temple.jpg"
                 alt="Ganesh Temple Decoration"
                 className="w-full h-full object-cover"
               />

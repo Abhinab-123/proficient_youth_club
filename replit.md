@@ -1,8 +1,8 @@
-# Ganesh Club Community Website
+# Proficient Youth Club Community Website
 
 ## Overview
 
-This is a React-based community website for the Ganesh Club, built with modern web technologies including TypeScript, Vite, Express.js, and Drizzle ORM. The application features a single-page layout with sections for donations, directions, community membership, and general information about the club.
+This is a React-based community website for the Proficient Youth Club, built with modern web technologies including TypeScript, Vite, Express.js, and Drizzle ORM. The application features a single-page layout with sections for donations, directions, community membership, and general information about the club.
 
 ## User Preferences
 
