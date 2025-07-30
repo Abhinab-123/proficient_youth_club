@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Heart, QrCode, Upload, ExternalLink } from "lucide-react";
+import { Heart, ExternalLink } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 export default function DonationSection() {
@@ -49,12 +49,7 @@ export default function DonationSection() {
     });
   };
 
-  const handleQRCodeUpload = () => {
-    toast({
-      title: "QR Code Upload",
-      description: "QR code upload functionality would be implemented here.",
-    });
-  };
+
 
   return (
     <section id="donation" className="py-16 bg-white">
@@ -164,20 +159,12 @@ export default function DonationSection() {
               </CardHeader>
               <CardContent>
                 <div className="bg-white p-6 rounded-lg shadow-inner mx-auto max-w-xs">
-                  <div className="w-48 h-48 bg-gray-100 rounded-lg mx-auto flex items-center justify-center border-2 border-dashed border-gray-300">
-                    <div className="text-center">
-                      <QrCode className="w-12 h-12 text-gray-400 mb-3 mx-auto" />
-                      <p className="text-sm text-gray-500 mb-2">QR Code will appear here</p>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        onClick={handleQRCodeUpload}
-                        className="text-primary hover:text-primary/80 border-primary"
-                      >
-                        <Upload className="w-4 h-4 mr-1" />
-                        Upload QR Code
-                      </Button>
-                    </div>
+                  <div className="w-48 h-48 rounded-lg mx-auto overflow-hidden">
+                    <img
+                      src="@assets/Screenshot 2025-07-30 172406_1753876474977.png"
+                      alt="QR Code for Donations"
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                 </div>
                 <p className="text-sm text-gray-500 mt-4">

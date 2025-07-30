@@ -76,20 +76,15 @@ export default function DirectionsSection() {
             </CardContent>
           </Card>
 
-          {/* Google Maps Embed */}
+          {/* Temple Photo */}
           <div className="md:col-span-2 bg-white rounded-xl shadow-lg overflow-hidden">
             <div className="relative h-96">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799160891!2d-74.25987368715491!3d40.697670063539654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1647834806560!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-full"
-                title="Ganesh Club Location"
+              <img
+                src="@assets/ganesh photo_1753876474979.jpg"
+                alt="Ganesh Temple Decoration"
+                className="w-full h-full object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
           </div>
         </div>

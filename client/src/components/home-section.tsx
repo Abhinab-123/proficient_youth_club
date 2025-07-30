@@ -29,16 +29,10 @@ export default function HomeSection() {
         {/* Banner Image */}
         <div className="relative rounded-2xl overflow-hidden shadow-2xl">
           <img
-            src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=800"
-            alt="Ganesh temple interior with beautiful decorations"
-            className="w-full h-64 md:h-96 object-cover"
+            src="@assets/ganesh-chaturthi-cymk_1753876474979.jpg"
+            alt="Ganesh Chaturthi Festival Invitation"
+            className="w-full h-64 md:h-96 object-contain bg-gradient-to-br from-amber-50 to-orange-50"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-            <div className="p-8 text-white">
-              <h2 className="text-2xl md:text-3xl font-bold mb-2">Celebrating Traditions</h2>
-              <p className="text-lg opacity-90">Building community through faith and fellowship</p>
-            </div>
-          </div>
         </div>
 
         {/* Call to Action Buttons */}
