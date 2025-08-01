@@ -18,21 +18,22 @@ export default function HomeSection() {
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-6">
-          ॐ<span className="text-primary"> श्री गणेशाय नमः</span>
+            ॐ<span className="text-primary"> श्री गणेशाय नमः</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Join our vibrant community dedicated to celebrating culture, fostering spiritual growth,
-            and bringing people together through the divine blessings of Lord Ganesh.
+            You are cordially invited to join us in celebrating Ganesh Chaturthi with devotion and joy.
           </p>
         </div>
 
-        {/* Banner Image */}
-        <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src="/assets/invitation-card.jpg"
-            alt="Ganesh Chaturthi Festival Invitation"
-            className="w-full h-64 md:h-96 object-contain bg-gradient-to-br from-amber-50 to-orange-50"
-          />
+        {/* Banner Image - Invitation Card */}
+        <div className="flex justify-center">
+          <div className="max-w-3xl w-full rounded-2xl overflow-hidden shadow-2xl">
+            <img
+              src="/assets/ganesh-chaturthi-cymk.jpg"
+              alt="Ganesh Chaturthi Festival Invitation"
+              className="w-full h-auto object-contain bg-gradient-to-br from-amber-50 to-orange-50"
+            />
+          </div>
         </div>
 
         {/* Call to Action Buttons */}
