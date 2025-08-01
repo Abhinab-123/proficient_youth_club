@@ -33,7 +33,7 @@ export default function DonationSection() {
                   </div>
                 </div>
                 <p className="text-sm text-gray-500 mt-4">
-                  UPI ID:8260978544@ibl
+                  UPI ID: 8260978544@ibl<br>Rudra Prasad Guru</br>
                 </p>
               </CardContent>
             </Card>
